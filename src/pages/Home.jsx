@@ -21,14 +21,18 @@ export default function Home() {
         fetchProducts();
     }, []);
 
+    function handleCardClick(card) {
+        setChoosedCard(card.id);
+    };
+
     return (
-        <>
-            <h1 className="page-title">Products Store</h1>
-            <div className="cards">
+        <div className="mx-auto">
+            <h1 className="text-center text-[26px] font-mono">My Tech Store</h1>
+            <div className="flex flex-wrap justify-center gap-4 p-5 max-w-full">
                 {products.map((product) => (
-                    <ProductCard key={product.id} product={product}/>
+                    <ProductCard key={product.id} product={product} onSelectedProduct={handleCardClick}/>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
