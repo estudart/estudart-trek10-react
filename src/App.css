@@ -1,43 +1,4 @@
-.page-title {
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 20px;
-  max-width: 100%;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 30%;
-  padding: 2%;
-  border: 2px solid white;
-  border-radius: 1%;
-  box-sizing: border-box;
-}
-
-.card-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-}
-
-.card h3 {
-  font-size: 14px;
-}
+@import "tailwindcss";
 
 .card:hover {
   transform: translateY(-4px);
